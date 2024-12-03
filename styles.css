@@ -1,0 +1,101 @@
+/* Estilos para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal */
+form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Adapta-se a diferentes larguras de tela */
+    max-width: 400px; /* Limita o tamanho máximo */
+    margin: 20px auto; /* Centraliza horizontalmente e adiciona espaço vertical */
+    box-sizing: border-box; /* Inclui padding e border na largura */
+}
+
+/* Cabeçalho do formulário */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Campos de entrada */
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+textarea, 
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Campos de rádio e checkbox */
+input[type="radio"], 
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Botões */
+button {
+    width: calc(50% - 5px); /* Divide igualmente com espaçamento */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+/* Botão enviar */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Botão limpar */
+button[type="reset"] {
+    background-color: #f44336;
+    color: #fff;
+}
+
+/* Efeito hover nos botões */
+button:hover {
+    opacity: 0.9;
+}
+
+/* Container dos botões */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Regras para dispositivos menores */
+@media (max-width: 500px) {
+    button {
+        width: 100%; /* Botões ocupam toda a largura em telas menores */
+        margin-bottom: 10px; /* Espaçamento adicional entre botões */
+    }
+
+    .button-container {
+        flex-direction: column; /* Alinha botões verticalmente */
+    }
+}
